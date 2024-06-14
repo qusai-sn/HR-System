@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Homepage</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-color: #ffffff;
+      padding: 60px 0;
+      color: black;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .hero-section .content {
+      max-width: 600px;
+    }
+    .hero-section .btn {
+      margin-right: 15px;
+    }
+    .hero-section .features {
+      list-style: none;
+      padding-left: 0;
+    }
+    .hero-section .features li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .hero-section .features li::before {
+      content: "\2713";
+      color: #28a745;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .hero-section .map {
+      position: relative;
+      margin-top: 30px;
+    }
+    .hero-section .map img {
+      max-width: 100%;
+    }
+    .hero-section .map .person {
+      position: absolute;
+    }
+    .hero-section .map .person img {
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+    h1, h2, h3, h4, h5, h6, p, a {
+      color: black;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+    .navbar-nav .nav-link {
+        margin-right: 15px;
+    }
+    .navbar-nav .btn {
+        margin-left: 15px;
+    }
+    .btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 132, 131);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 132, 131);
+    border-image: initial;
+}
+.btn-primary:hover {
+        color: rgb(0, 132, 131);
+        background-color: rgb(220, 224, 224);
+        border-color: rgb(0, 132, 131);
+    }
+.header {
+    
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">HR<span style="color: #00BFFF;">System</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="btn btn-primary" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="#">Regester</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-lg-left">
+    <div class="container header">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="content">
+            <h6>Human Resource Management System HRMS</h6>
+            <h1>Technology with the power to transform HR</h1>
+            <p class="lead">Tackling your HR needs from Acquire to Retire.</p>
+            <div>
+              <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+              <a href="#" class="btn btn-outline-secondary btn-lg">Get a Price Quote</a>
+            </div>
+            <ul class="features mt-4">
+              <li>No credit card required</li>
+              <li>Amazing after-sales support</li>
+              <li>Fully localized HR system to MENA</li>
+            </ul>
+          </div>
+        </div>
+         
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title 2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title 3</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">&copy; 2024 Company Name. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
