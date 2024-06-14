@@ -23,9 +23,21 @@
             gap: 5px;
         }
         .profile-container {
-            max-width: 900px;
-            margin: 50px auto;
+            
+            min-width: 300px;
+            max-width: 90% ;
+            margin:   auto ;
+            border-radius: 15px;
+             margin-top: 0; 
+             margin-bottom: 0;
+             padding-top: 50px;
+             padding-bottom: 50px;
+              
+
+
+        
         }
+       
         .profile-header {
             display: flex;
             align-items: center;
@@ -63,6 +75,13 @@
             padding: 8px 13px;
             
         }
+
+        .main-col {
+
+            width: 100%;
+        }
+
+
         
         </style>
 </head>
@@ -97,10 +116,21 @@
             </div>
         </div>
     </nav>
-    
-    <div class="container profile-container">
-        <div class="card mb-4 shadow rounded">
+
+    <div id="base-container" class="mask d-flex align-items-center h-100  gradient-custom-3">
+
+    <div class="col-16 main-col" style="background-color:#e9ecef">
+
+
+    <!-- cards container -->  
+    <div class="container profile-container" id="cards-columns">
+
+        <!-- title card -->  
+        <div class="card mb-4">
+
             <div class="card-body profile-header">
+
+                <!-- profile picture--> 
                 <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic" id="profile-pic">
                 <div class="ml-4">
                     <h1 class="card-title">Edit Profile</h1>
@@ -110,8 +140,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- edit profile form-->
         <form>
-            <div class="card mb-4 shadow rounded">
+            <!-- personal info form-->
+            <div class="card mb-4" id="personal-info">
                 <div class="card-body">
                     <h2 class="card-title">Personal Information</h2>
                     <div class="form-group">
@@ -136,15 +169,19 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-4 shadow rounded">
+
+            <!-- about form-->
+            <div class="card mb-4" id="about">
                 <div class="card-body">
-                    <h2 class="card-title">About Me</h2>
+                    <h2 class="card-title">About</h2>
                     <div class="form-group">
                         <textarea class="form-control" id="about" name="about" rows="5">Jane is an experienced product manager with over 10 years of experience in the tech industry. She specializes in product development and has a strong background in UX/UI design.</textarea>
                     </div>
                 </div>
             </div>
-            <div class="card mb-4 shadow rounded">
+
+            <!-- skills form-->
+            <div class="card mb-4" id="skills">
                 <div class="card-body">
                     <h2 class="card-title">Skills</h2>
                     <div class="form-group">
@@ -152,7 +189,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-4 shadow rounded">
+
+            <!-- experience form-->
+            <div class="card mb-4" id="experience">
                 <div class="card-body">
                     <h2 class="card-title">Experience</h2>
                     <div class="form-group">
@@ -181,13 +220,16 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-4 shadow rounded">
+
+            <!-- button card-->
+            <div class="card mb-4 ">
                 <div class="card-body text-center">
-                    <button type="submit" class="btn btn-success">Save Changes</button>
+                    <button type="submit" class="btn btn-success" id="Update-profile-save-changes">Save Changes</button>
                 </div>
             </div>
         </form>
     </div>
+   
     <!-- Footer -->
     <footer class="bg-light text-dark pt-4">
         <div class="container">
