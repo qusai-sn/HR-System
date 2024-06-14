@@ -1,4 +1,10 @@
 
+colors : 
+#05445E
+#189AB4
+#75E6DA
+#D4F1F4
+#ffffff
 
 Boot strap elements  :
 
@@ -61,3 +67,5 @@ $container-max-widths: (
 .custom-container {
   @include make-container();
 }
+
+
