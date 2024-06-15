@@ -4,34 +4,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function generateNavbar() {
   const navbarHTML = `
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-        <a class="navbar-brand" href="#">HR<span style="color: #00BFFF;">System</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary ms-2" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary ms-2" href="#">Register</a>
-            </li>
-          </ul>
+   
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0">H<span class="text-dark">R</span> </h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="align-items: center;" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="contact.html" class="nav-item nav-link">contact us</a>
+                        <a href="Profile.html" class="nav-item nav-link">Profile</a>
+                       
+                        <div class="nav-item dropdown">
+                            <a href="services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="leave-application.html" class="dropdown-item">	Leave Application </a>
+                                <a href="view-employees.html" class="dropdown-item">View employees information</a>
+                                <a href="company-policies.html" class="dropdown-item">Company Policies</a>
+                                <a href="task-managment.html" class="dropdown-item">Task Managment</a>
+                                <a href="feedback.html" class="dropdown-item">Feedback System</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill  " style="margin-right: 20px;">Login </a>
+                    <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Register </a>
+                
+                </div>
+            </nav>
         </div>
-      </div>
-    </nav>
+    </div>
   `;
 
   document.body.insertAdjacentHTML('afterbegin', navbarHTML);
