@@ -1,0 +1,64 @@
+[
+    {
+      "name": "Ali Ahmed",
+      "jobTitle": "Software Engineer",
+      "salary": 7000,
+      "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?crop=faces&fit=crop&w=200&h=200"
+    },
+    {
+      "name": "Mohammed Said",
+      "jobTitle": "Project Manager",
+      "salary": 8500,
+      "image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=faces&fit=crop&w=200&h=200"
+    },
+    {
+      "name": "Omar Khaled",
+      "jobTitle": "Data Analyst",
+      "salary": 6500,
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=faces&fit=crop&w=200&h=200"
+    },
+    {
+      "name": "Jon Josef",
+      "jobTitle": "HR Specialist",
+      "salary": 6000,
+      "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=faces&fit=crop&w=200&h=200"
+    },
+    {
+      "name": "Khalid Mohammed",
+      "jobTitle": "System Administrator",
+      "salary": 7000,
+      "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?crop=faces&fit=crop&w=200&h=200"
+    },
+    {
+      "name": "Jamal Ibrahim",
+      "jobTitle": "UI/UX Designer",
+      "salary": 4200,
+      "image": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "name": "Nour Adel",
+      "jobTitle": "Marketing Specialist",
+      "salary": 5800,
+      "image": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "name": "Tariq Saeed",
+      "jobTitle": "Network Engineer",
+      "salary": 7000,
+      "image": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "name": "Ahmad Youssef",
+      "jobTitle": "Accountant",
+      "salary": 6000,
+      "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&h=200&w=200"
+    },
+    {
+      "name": "Jaber Ali",
+      "jobTitle": "Business Analyst",
+      "salary": 4500,
+      "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=200&w=200"
+    }
+    
+  ]
+  
