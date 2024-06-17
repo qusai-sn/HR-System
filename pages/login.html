@@ -57,13 +57,13 @@
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
                     <label class="form-label" for="user-name">Username</label>
-                    <input type="text" id="user-name" class="form-control" />
+                    <input type="text" id="user-name" class="form-control" />  <span id="usernameError" style="color: rgb(128, 125, 125);"></span>
                 </div>
 
                 <!-- Password input -->
                 <div data-mdb-input-init class="form-outline mb-4">
                     <label class="form-label" for="password">Password</label>
-                    <input type="password" id="password" class="form-control" />
+                    <input type="password" id="password" class="form-control" /> <span id="passwordError" style="color: red;"> </span>
                 </div>
 
                 <!-- Remember me -->
@@ -72,7 +72,7 @@
                     <!-- Checkbox -->
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="remember-me-check" checked />
-                        <label class="form-check-label" for="remember-me-check"> Remember me </label>
+                        <label class="form-check-label" for="remember-me-check"> Remember me </label> 
                     </div>  
                     </div>  
                     
@@ -100,5 +100,28 @@
 
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    document.getElementById("user-name").addEventListener("input", function() {
+    const input = this.value;
+    const regex = /^[a-zA-Z0-9]+([a-zA-Z0-9](_|-| )[a-zA-Z0-9])*[a-zA-Z0-9]+$/;
+
+    if (regex.test(input)) { document.getElementById("usernameError").innerText = "";
+    } else {
+            document.getElementById("usernameError").innerText = "Usernames can consist of lowercase, capitals or alphanumerica characters and can consist of underscore and hyphens and spaces";}
+
+});
+
+document.getElementById("password").addEventListener("input", function() {
+    const input = this.value;
+    const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+
+    if (regex.test(input)) { document.getElementById("passwordError").innerText = "";
+    } else {
+            document.getElementById("passwordError").innerText = "Minimum eight characters, at least one letter, one number and one special character";
+    }
+
+});
+</script>
+
 </body>
 </html>
