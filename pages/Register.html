@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/main/nav.css">
 
    <style> 
+
     .gradient-custom-3 {
         
         body { font-family: 'Open Sans', sans-serif; 
@@ -27,9 +28,11 @@
     h2 {
         font-family: 'Open Sans', sans-serif; 
     }
-
-    
-        </style>
+    .error { 
+        color: red;
+        font-weight: 400;
+    }
+    </style>
 
 
 </head>
@@ -70,6 +73,7 @@
                     <div data-mdb-input-init class="form-outline">
                         <label class="form-label" for="first-name">First name</label>
                         <input type="text" id="first-name" class="form-control" />
+                        <span id="firstNameError" class="error"></span>
                     </div>
                     </div>
 
@@ -78,6 +82,7 @@
                     <div data-mdb-input-init class="form-outline">
                         <label class="form-label" for="last-name">Last name</label>
                         <input type="text" id="last-name" class="form-control" />
+                        <span id="lastNameError" class="error"></span>
                     </div>
                     </div>
                 </div> <!-- end of the row -->
@@ -86,24 +91,28 @@
                 <div data-mdb-input-init class="form-outline mb-4">
                     <label class="form-label" for="user-name">User Name</label>
                     <input type="email" id="user-name" class="form-control" />
+                    <span id="username-error" class="error"></span>
                 </div>
 
                 <!-- input field div -->
                 <div data-mdb-input-init class="form-outline mb-4">
                     <label class="form-label" for="email">Email</label>
                     <input type="email" id="email" class="form-control" />
+                    <span id="emailError" class="error"></span>
                 </div>
 
                 <!-- input field div -->
                 <div data-mdb-input-init class="form-outline mb-4">
                     <label class="form-label" for="password">Password</label>
                     <input type="password" id="password" class="form-control" />
+                    <span id="passError" class="error"></span>
                 </div>
 
                 <!-- input field div -->
                 <div data-mdb-input-init class="form-outline mb-4">
                     <label class="form-label" for="password-repeat">Repeat your password</label>
                     <input type="password" id="pssword-repeat" class="form-control" />
+                    <span id="repeatpassdError" class="error"></span>
                 </div>
 
                 <!-- Terms of service div -->
