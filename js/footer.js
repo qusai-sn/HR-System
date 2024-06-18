@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const footerHTML = `
          <!-- Footer -->
    
-       <footer class="text-center text-lg-start"> 
+       <footer class="text-center text-lg-start "> 
         <section class="text-center text-lg-start" style="padding: 10px;">
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-3">

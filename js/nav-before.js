@@ -22,9 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a href="contact.html" class="nav-item nav-link">contact us</a>
                         
                     </div>
-                    <a href="login.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill  " style="margin-right: 20px;">Login </a>
-                    <a href="Register.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Register </a>
-                
+                    <div class="d-flex">
+                    <a href="login.html" class="btn btn-primary py-2 px-4 rounded-pill me-2">Login</a>
+                    <a href="Register.html" class="btn btn-primary py-2 px-4 rounded-pill">Register</a>
+                    <button class="btn btn-toggle Mode" onclick="toggleDarkMode()">
+                        <i class="fas fa-sun SunAndMoon"></i>
+                        <span class="toggle-text">Mode</span> 
+                        <i class="fas fa-moon SunAndMoon"></i>
+                    </button>
+                </div>
                 </div>
             </nav>
         </div>

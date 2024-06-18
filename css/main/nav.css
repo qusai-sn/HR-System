@@ -6,7 +6,14 @@ body {
     min-height: 100vh;
 }
 
-
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .user-info i {
+    margin-right: 8px;
+  }
 
 .btn-success {
     background-color: #0d6efd;

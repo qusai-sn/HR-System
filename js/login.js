@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // Redirect or perform any other actions after successful login
       // window.location.href = 'dashboard.html'; // Example redirect
+
+      alert('Welcome '+user.firstName);
+      window.location.href = "../pages/service2.html" ;
     });
   });
   
