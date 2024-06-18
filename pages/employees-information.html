@@ -63,48 +63,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
    
-    <script>
-        async function fetchEmployees() {
-            const response = await fetch('../data/employees.JSON');
-            const employees = await response.json();
-            return employees;
-        }
-
-        function createEmployeeCard(employee) {
-            const card = document.createElement('div');
-            card.className = 'card';
-
-            const img = document.createElement('img');
-            img.src = employee.image;
-            img.alt = employee.name;
-
-            const name = document.createElement('h2');
-            name.textContent = employee.name;
-
-            const jobTitle = document.createElement('p');
-            jobTitle.textContent = `Job Title: ${employee.jobTitle}`;
-
-            const salary = document.createElement('p');
-            salary.textContent = `Salary: $${employee.salary}`;
-
-            card.appendChild(img);
-            card.appendChild(name);
-            card.appendChild(jobTitle);
-            card.appendChild(salary);
-
-            return card;
-        }
-
-        async function displayEmployees() {
-            const employees = await fetchEmployees();
-            const employeeCardsContainer = document.getElementById('employee-cards');
-            employees.forEach(employee => {
-                const card = createEmployeeCard(employee);
-                employeeCardsContainer.appendChild(card);
-            });
-        }
-
-        displayEmployees();
-    </script>
+    <script src="../js/get-employees-info.js"></script>
 </body>
 </html>
