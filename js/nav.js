@@ -5,43 +5,91 @@ document.addEventListener("DOMContentLoaded", function() {
 function generateNavbar() {
   const navbarHTML = `
    
-   
-    <div class="container-fluid nav-bar">
-        <div class="container">
-            <nav class="navbar navbar-light navbar-expand-lg py-4">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-primary fw-bold mb-0">H<span class="text-dark">R</span> </h1>
-                </a>
-                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">
+            <h1 class="text-success fw-bold mb-0">H<span class="text-dark Text-r">R</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars text-success"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active Active-item" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="leaveApplication.html">Leave Application</a></li>
+                        <li><a class="dropdown-item" href="employees-information.html">View Employees Information</a></li>
+                        <li><a class="dropdown-item" href="taskManagement.html">Task Management</a></li>
+                        <li><a class="dropdown-item" href="feedback.html">Feedback System</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <a href="login.html" class="btn btn-primary py-2 px-4 rounded-pill me-2">Login</a>
+                <a href="Register.html" class="btn btn-primary py-2 px-4 rounded-pill">Register</a>
+                <button class="btn btn-toggle Mode" onclick="toggleDarkMode()">
+                    <i class="fas fa-sun SunAndMoon"></i>
+                    <span class="toggle-text">Mode</span> 
+                    <i class="fas fa-moon SunAndMoon"></i>
                 </button>
-                <div class="collapse navbar-collapse" style="align-items: center;" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="contact.html" class="nav-item nav-link">contact us</a>
-                        <a href="Profile.html" class="nav-item nav-link">Profile</a>
-                       
-                        <div class="nav-item dropdown">
-                            <a href="services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu bg-light">
-                                <a href="leave-application.html" class="dropdown-item">	Leave Application </a>
-                                <a href="view-employees.html" class="dropdown-item">View employees information</a>
-                                <a href="company-policies.html" class="dropdown-item">Company Policies</a>
-                                <a href="task-managment.html" class="dropdown-item">Task Managment</a>
-                                <a href="feedback.html" class="dropdown-item">Feedback System</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill  " style="margin-right: 20px;">Login </a>
-                    <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Register </a>
-                
-                </div>
-            </nav>
+            </div>
         </div>
     </div>
+</nav>
+
   `;
 
   document.body.insertAdjacentHTML('afterbegin', navbarHTML);
 }
+
+
+// dark mode nav : 
+
+// <!-- Navbar -->
+// <nav class="navbar navbar-expand-lg">
+//     <div class="container">
+//         <a class="navbar-brand" href="index.html">
+//             <h1 class="text-success fw-bold mb-0">H<span class="text-dark Text-r">R</span></h1>
+//         </a>
+//         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+//             <span class="fa fa-bars text-success"></span>
+//         </button>
+//         <div class="collapse navbar-collapse" id="navbarCollapse">
+//             <ul class="navbar-nav mx-auto">
+//                 <li class="nav-item"><a class="nav-link active Active-item" href="index.html">Home</a></li>
+//                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+//                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+//                 <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+//                 <li class="nav-item dropdown">
+//                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+//                         Services
+//                     </a>
+//                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+//                         <li><a class="dropdown-item" href="leave-application.html">Leave Application</a></li>
+//                         <li><a class="dropdown-item" href="view-employees.html">View Employees Information</a></li>
+//                         <li><a class="dropdown-item" href="company-policies.html">Company Policies</a></li>
+//                         <li><a class="dropdown-item" href="task-management.html">Task Management</a></li>
+//                         <li><a class="dropdown-item" href="feedback.html">Feedback System</a></li>
+//                     </ul>
+//                 </li>
+//             </ul>
+//             <div class="d-flex">
+//                 <a href="#" class="btn btn-success py-2 px-4 rounded-pill me-2">Login</a>
+//                 <a href="#" class="btn btn-success py-2 px-4 rounded-pill">Register</a>
+//                 <button class="btn btn-toggle Mode" onclick="toggleDarkMode()">
+//                     <i class="fas fa-sun SunAndMoon"></i>
+//                     <span class="toggle-text">Mode</span> 
+//                     <i class="fas fa-moon SunAndMoon"></i>
+//                 </button>
+//             </div>
+//         </div>
+//     </div>
+// </nav>
