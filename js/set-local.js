@@ -84,10 +84,10 @@ let initialContactMessage =[ {
         const employees = await response.json();
 
         // Store employees data in localStorage
-        localStorage.setItem('employees', JSON.stringify(employees));
+        localStorage.setItem('employees', JSON.stringify(employees));  // <<<<<<<<<<<<<<
         
         // Log the stored data (optional for debugging)
-        console.log(JSON.parse(localStorage.getItem('employees')));
+        console.log(JSON.parse(localStorage.getItem('employees'))); 
     } catch (error) {
         console.error('Error fetching or storing data:', error);
     }
