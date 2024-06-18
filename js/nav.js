@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
           <a class="navbar-brand" href="home.html">
-              <h1 class="text-success fw-bold mb-0">H<span class="text-dark Text-r">R</span></h1>
+              <h1 class="text-primary fw-bold mb-0">H<span class="text-dark Text-r">R</span></h1>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="fa fa-bars text-success"></span>
+              <span class="fa fa-bars text-primary"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mx-auto">
