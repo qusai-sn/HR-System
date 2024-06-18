@@ -12,15 +12,15 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('passwordError').textContent = '';
   
       // Retrieve existing local storage data
-      let localStorageData = JSON.parse(localStorage.getItem('localStorageData'));
+      let user_data = JSON.parse(localStorage.getItem('userData'));
       
-      if (!localStorageData || !localStorageData.userData || !localStorageData.userData.users) {
+      if (!user_data || !user_data.users) {
         alert("No users registered. Please register first.");
         return;
       }
   
       // Find the user with the provided username
-      const user = localStorageData.userData.users.find(u => u.username === userName);
+      const user = user_data.users.find(u => u.username === userName);
   
       if (!user) {
         document.getElementById('usernameError').textContent = 'Username not found.';
@@ -38,8 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log("Logged in user:", user);
   
       // Optionally, set the logged-in user in local storage
-      localStorageData.userData.loggedInUser = user.id;
-      localStorage.setItem('localStorageData', JSON.stringify(localStorageData));
+      user_data.loggedInUser = user.id;
+      sessionStorage.setItem('logged-in-user',JSON.stringify(user));
+      localStorage.setItem('userData', JSON.stringify(user_data));
   
       // Redirect or perform any other actions after successful login
       // window.location.href = 'dashboard.html'; // Example redirect
