@@ -93,13 +93,6 @@ repeatPassField.addEventListener ('change', function () {
 
 
 
-
-
-
-
-
-
-
 // this is when you click : 
 
 
@@ -157,13 +150,6 @@ document.getElementById('register-button').addEventListener('click', function(ev
     }
 
 
-
-
-   
-    
-   
-  
-
     if(valid){
 
        // Retrieve existing local storage data
@@ -218,12 +204,7 @@ document.getElementById('register-button').addEventListener('click', function(ev
     window.location.href = "../pages/login.html" ;
     // Clear the form
     // event.target.reset();
-
-
-
     }
-    
-
   });
   
 
