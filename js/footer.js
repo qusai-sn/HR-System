@@ -18,16 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             We are a company that performs all technical work for organizations interested in the IT sector.
                         </p>
                     </div>
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Services
-                        </h6>
-                        <p><a href="#!" class="text-reset">Leave Application</a></p>
-                        <p><a href="#!" class="text-reset">View employees information</a></p>
-                        <p><a href="#!" class="text-reset">Company Policies</a></p>
-                        <p><a href="#!" class="text-reset">Task Management</a></p>
-                        <p><a href="#!" class="text-reset">Feedback System</a></p>
-                    </div>
+                     
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">
                             Home
