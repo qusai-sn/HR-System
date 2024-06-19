@@ -7,7 +7,11 @@ let initialUserData = {
             password: "hashedPassword1",
             firstName: "John",
             lastName: "Doe",
-            email: "john.doe@example.com"
+            email: "john.doe@example.com",
+            location : "" ,
+            role : "" ,
+            phone : "" , 
+            about : ""
         },
         {
             id: 2,
@@ -15,7 +19,11 @@ let initialUserData = {
             password: "hashedPassword2",
             firstName: "Jane",
             lastName: "Smith",
-            email: "jane.smith@example.com"
+            email: "jane.smith@example.com",
+            location : "" ,
+            role : "" ,
+            phone : "" , 
+            about : ""
         }
     ],
     loggedInUser: null
@@ -84,7 +92,7 @@ let initialContactMessage =[ {
         const employees = await response.json();
 
         // Store employees data in localStorage
-        localStorage.setItem('employees', JSON.stringify(employees));  // <<<<<<<<<<<<<<
+        localStorage.setItem('employees', JSON.stringify(employees));  // <<<<<<<<<<<<<< we intilize employees here 
         
         // Log the stored data (optional for debugging)
         console.log(JSON.parse(localStorage.getItem('employees'))); 

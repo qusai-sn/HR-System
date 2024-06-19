@@ -49,7 +49,7 @@ function loadTasks() {
 function displayTask(task) { // we'll style the tasks here
   const li = document.createElement("li");
   li.className = "list-group-item";
-  li.textContent = `Name: ${task.employeeName}, Task Title: ${task.taskTitle}, Due: ${task.dueDate}, Description: ${task.taskDescription}`;
+  li.textContent = `Name: ${task.assignedTo}, Task Title: ${task.taskTitle}, Due: ${task.dueDate}, Description: ${task.taskDescription}`;
   taskList.appendChild(li);
 }
 

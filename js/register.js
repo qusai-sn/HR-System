@@ -167,7 +167,11 @@ document.getElementById('register-button').addEventListener('click', function(ev
                 password: "hashedPassword1",
                 firstName: "John",
                 lastName: "Doe",
-                email: "john.doe@example.com"
+                email: "john.doe@example.com",
+                location : "" ,
+                role : "" ,
+                phone : "" , 
+                about : ""
             },
             {
                 id: 2,
@@ -175,7 +179,11 @@ document.getElementById('register-button').addEventListener('click', function(ev
                 password: "hashedPassword2",
                 firstName: "Jane",
                 lastName: "Smith",
-                email: "jane.smith@example.com"
+                email: "jane.smith@example.com",
+                location : "" ,
+                role : "" ,
+                phone : "" , 
+                about : ""
             }
         ],
         loggedInUser: null
@@ -190,7 +198,11 @@ document.getElementById('register-button').addEventListener('click', function(ev
       password: password, // Ideally, hash the password before storing
       firstName: firstName,
       lastName: lastName,
-      email: email
+      email: email ,
+      location : "" ,
+      role : "" ,
+      phone : "" , 
+      about : ""
     };
   
     // Add new user to users array
