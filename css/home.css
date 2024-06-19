@@ -1,78 +1,74 @@
-
 .hero-section {
-    background-color: var(--card);
-    padding: 60px 0;
-    color: black;
+  background-color: var(--card);
+  padding: 60px 0;
+  color: black;
 }
 .footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
 }
 .hero-section .content {
-    max-width: 600px;
+  max-width: 600px;
 }
 .hero-section .btn {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 .hero-section .features {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 .hero-section .features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .hero-section .features li::before {
-    content: "\2713";
-    color: #28a745;
-    font-weight: bold;
-    margin-right: 10px;
+  content: "\2713";
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 10px;
 }
 .hero-section .map {
-    position: relative;
-    margin-top: 30px;
+  position: relative;
+  margin-top: 30px;
 }
 .hero-section .map img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .hero-section .map .person {
-    position: absolute;
+  position: absolute;
 }
 .hero-section .map .person img {
-    border-radius: 50%;
-    border: 2px solid white;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 h1, h2, h3, h4, h5, h6, p, a {
-    color: black;
+  color: black;
 }
 
 .navbar-brand {
-    font-weight: bold;
+  font-weight: bold;
 }
 .navbar-nav .nav-link {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 .navbar-nav .btn {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 .btn-primary {
-color: rgb(255, 255, 255);
-background-color: var(--primary-color);
-border-width: 1px;
-border-style: solid;
-border-color: rgb(0, 132, 131);
-border-image: initial;
+  color: rgb(255, 255, 255);
+  background-color: var(--primary-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 132, 131);
+  border-image: initial;
 }
 .btn-primary:hover {
-    color: rgb(0, 132, 131);
-    background-color: rgb(220, 224, 224);
-    border-color: rgb(0, 132, 131);
+  color: rgb(0, 132, 131);
+  background-color: rgb(220, 224, 224);
+  border-color: rgb(0, 132, 131);
 }
-
- 
-
 
 .card p {
   font-size: 17px;
@@ -219,7 +215,7 @@ border-image: initial;
 }
 
 .card3:hover .go-corner {
-  transition: opactiy 0.3s linear;
+  transition: opacity 0.3s linear;
   opacity: 1;
 }
 
@@ -276,7 +272,6 @@ border-image: initial;
   display: flex;
   justify-content: center;
   height: 400px;
-  
 }
 .about-content {
   text-align: center;
@@ -285,9 +280,8 @@ border-image: initial;
   flex-direction: column;
   justify-content: space-around;
 }
-.row-disply{
+.row-disply {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
- 
 }
-   
