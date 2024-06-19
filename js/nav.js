@@ -39,8 +39,9 @@ document.addEventListener("DOMContentLoaded", function() {
                       <i class="fas fa-moon SunAndMoon"></i>
                   </button>
                   <div class="user-info" id="user-info">
+                   <a id="profile-button" href="../pages/profile.html"> </a>
                       <!-- User info will be injected here -->
-                  </div>
+                  </div> 
               </div>
           </div>
       </div>
@@ -65,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const user = getLoggedInUser();
   
     if (user) {
-      const userInfoContainer = document.getElementById('user-info');
+      const userInfoContainer = document.getElementById('profile-button');
       userInfoContainer.innerHTML = `<i class="fas fa-user"></i> <span>${user}</span>`;
     }
   }

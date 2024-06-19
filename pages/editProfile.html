@@ -111,10 +111,10 @@
             <div class="card mb-4" id="personal-info">
                 <div class="card-body">
                     <h2 class="card-title">Personal Information</h2>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" class="form-control" id="name" name="name" value="Jane Smith">
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <label for="role">Role:</label>
                         <input type="text" class="form-control" id="role" name="role" value="Senior Product Manager">
@@ -130,6 +130,10 @@
                     <div class="form-group">
                         <label for="location">Location:</label>
                         <input type="text" class="form-control" id="location" name="location" value="New York, NY">
+                    </div>
+                    <div class="form-group">
+                        <label for="about">About:</label>
+                        <input type="text" class="form-control" id="about" name="about" value="Bio.">
                     </div>
                 </div>
             </div>
@@ -188,13 +192,13 @@
             <!-- button card-->
             <div class="card mb-4 ">
                 <div class="card-body text-center">
-                    <button type="submit" class="btn btn-success" id="Update-profile-save-changes">Save Changes</button>
+                    <button  type="button" class="btn btn-success" id="update-profile">Save Changes</button>
                 </div>
             </div>
         </form>
     </div>
 
-
+    <script src="../js//editProfile.js"></script>
     <script src="../js/footer.js"></script>
     <script>
         document.getElementById('profile-pic-upload').addEventListener('change', function(event) {

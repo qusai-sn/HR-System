@@ -1,35 +1,47 @@
-// Load profile data from localStorage into form
-function loadProfileData() {
-    const profileData = JSON.parse(localStorage.getItem('profiles'));
-    // if (profileData) {
-        document.getElementById('name').value = profileData.name;
-        document.getElementById('role').value = profileData.position;
-        document.getElementById('email').value = profileData.email;
-        document.getElementById('phone').value = profileData.phone;
-        document.getElementById('location').value = profileData.location;
-        console.log(profileData);
-    // }
-}
+
 
  // Save profile data to localStorage from form
-function saveProfileData() {
-    // event.preventDefault();
-    const profileData = {
-        name: document.getElementById('name').value,
-        position: document.getElementById('role').value,
+ function saveProfileData() {
+    let sessionUser = JSON.parse(sessionStorage.getItem('logged-in-user'));
+
+    let userData = {
+        role: document.getElementById('role').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         location: document.getElementById('location').value,
+        about: document.getElementById('about').value,
+        firstName: sessionUser.firstName,
+        lastName: sessionUser.lastName,
+        id: sessionUser.id,
+        username: sessionUser.username
     };
-    localStorage.setItem('profileData', JSON.stringify(profileData));
-    // window.location.href = 'profile.html';
-    console.log(profileData);
 
+    sessionStorage.setItem('logged-in-user', JSON.stringify(userData));
+    updateLocalStorageUserData(userData);
+    console.log(userData);
+
+    // Redirect to profile page
+    window.location.href = "../pages/profile.html";
 }
 
-// Load profile data when the page loads
-window.onload = loadProfileData;
+function updateLocalStorageUserData(updatedUserData) {
+    let storedUserData = JSON.parse(localStorage.getItem('userData'));
 
-// Attach event listener to form submit
-document.getElementById('Update-profile-save-changes').addEventListener('submit', saveProfileData);
+    let userIndex = storedUserData.users.findIndex(user => user.username === updatedUserData.username);
+    if (userIndex !== -1) {
+        // Update the user's profile data
+        storedUserData.users[userIndex].role = updatedUserData.role;
+        storedUserData.users[userIndex].email = updatedUserData.email;
+        storedUserData.users[userIndex].phone = updatedUserData.phone;
+        storedUserData.users[userIndex].location = updatedUserData.location;
+        storedUserData.users[userIndex].about = updatedUserData.about;
+
+        localStorage.setItem('userData', JSON.stringify(storedUserData));
+    }
+}
+
+// Attach event listener to update-profile button
+document.getElementById('update-profile').addEventListener('click', saveProfileData);
+
+
 
