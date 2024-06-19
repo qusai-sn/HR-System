@@ -81,3 +81,16 @@ body {
 .custom-carousel-control span {
     color: white;
 }
+
+.btn-logout {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    color: darkgray;
+}

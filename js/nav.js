@@ -84,9 +84,9 @@ function generateLoggedInNavbar(username) {
                       <a id="profile-button" href="profile.html">
                           <i class="fas fa-user"></i> <span>${username}</span>
                       </a>
-                  </div>
-                  <button class="btn btn-danger ms-3" onclick="logout()">Logout</button>
-              </div>
+                  <button class="btn btn-logout" onclick="logout()">
+                      <i class="fas fa-sign-out-alt"></i>
+                  </button>
           </div>
       </div>
   </nav>
