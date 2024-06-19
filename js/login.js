@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Optionally, set the logged-in user in local storage
       user_data.loggedInUser = user.id;
       sessionStorage.setItem('logged-in-user',JSON.stringify(user));
+      sessionStorage.setItem('is-logged-in',JSON.stringify(true));
       localStorage.setItem('userData', JSON.stringify(user_data));
   
       // Redirect or perform any other actions after successful login
