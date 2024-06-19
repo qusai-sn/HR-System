@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   
       // Login successful
-      alert("Login successful!");
+       
       console.log("Logged in user:", user);
   
       // Optionally, set the logged-in user in local storage
