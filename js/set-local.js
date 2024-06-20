@@ -11,7 +11,8 @@ let initialUserData = {
             location : "" ,
             role : "" ,
             phone : "" , 
-            about : ""
+            about : "" ,
+            img : ""
         },
         {
             id: 2,
@@ -23,7 +24,8 @@ let initialUserData = {
             location : "" ,
             role : "" ,
             phone : "" , 
-            about : ""
+            about : "" ,
+            img : ""
         }
     ],
     loggedInUser: null

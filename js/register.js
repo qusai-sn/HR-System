@@ -202,7 +202,8 @@ document.getElementById('register-button').addEventListener('click', function(ev
       location : "" ,
       role : "" ,
       phone : "" , 
-      about : ""
+      about : "" ,
+      img : ""
     };
   
     // Add new user to users array

@@ -12,5 +12,7 @@ document.addEventListener("DOMContentLoaded",function(){
     document.getElementById('phone').innerHTML = userData.phone;
     document.getElementById('about').innerHTML = userData.about;
     document.getElementById('location').innerHTML = userData.location;
+    document.getElementById('profile-picture').src = userData.img ;
+    console.log(userData.img);
 
 });
