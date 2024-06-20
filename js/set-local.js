@@ -48,13 +48,12 @@ let initialTasks = [
 
 let initialLeaveApplications = [
     {
-        applicationId: 1,
-        employeeId: "employeeId1",
-        leaveType: "Casual Leave",
-        fromDate: "2024-07-01",
-        toDate: "2024-07-02",
-        reason: "Family vacation",
-        leaveDuration: "Full Day"
+        employeeName: "employee3",
+        endDate: "2024-07-04",
+        leaveDuration: "Half Day",
+        leaveReason: "new",
+        leaveType: "Sick Leave",
+        startDate: "2024-06-08"
     }
 ];
 

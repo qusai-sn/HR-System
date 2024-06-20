@@ -1,7 +1,7 @@
 const leaveForm = document.getElementById("leaveForm");
       const applicationList = document.getElementById("applicationList");
       const employeeNameSelect = document.getElementById("employeeName");
-
+      const taskTableBody = document.getElementById("taskTableBody");
       // Load stored applications
       loadApplications();
 
@@ -50,11 +50,27 @@ const leaveForm = document.getElementById("leaveForm");
         applications.forEach((application) => displayApplication(application));
       }
 
+      // function displayApplication(application) {
+      //   const li = document.createElement("li");
+      //   li.className = "list-group-item";
+      //   li.innerHTML = `Name: ${application.employeeName}, Type: ${application.leaveType}, Start: ${application.startDate}, End: ${application.endDate}, Duration: ${application.leaveDuration}, Reason: ${application.leaveReason}`;
+      //   applicationsList.appendChild(li);
+      // }
+      
       function displayApplication(application) {
-        const li = document.createElement("li");
-        li.className = "list-group-item";
-        li.innerHTML = `Name: ${application.employeeName}, Type: ${application.leaveType}, Start: ${application.startDate}, End: ${application.endDate}, Duration: ${application.leaveDuration}, Reason: ${application.leaveReason}`;
-        applicationsList.appendChild(li);
+        const row = document.createElement("tr");
+        row.dataset.id = application.id;
+        row.innerHTML = `
+            <td>${application.employeeName}</td>
+            <td>${application.leaveType}</td>
+            <td>${application.leaveReason}</td>
+            <td>${application.startDate}</td>
+            <td>${application.endDate}</td>
+            <td>${application.leaveDuration}</td>
+             
+        `;
+        taskTableBody.appendChild(row);
+
       }
 
       async function loadEmployees() {
