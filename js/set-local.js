@@ -105,5 +105,6 @@ let initialContactMessage =[ {
 // Event listener for the button that initializes localStorage
 document.getElementById('set-local').addEventListener('click', function() {
     initializeLocalStorage();
+    sessionStorage.clear();
     alert('Default data initialized successfully!');
 });

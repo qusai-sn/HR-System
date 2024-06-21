@@ -8,7 +8,7 @@ const taskForm = document.getElementById("taskForm");
 
       // Load employees from JSON file
       loadEmployees();
-
+      
       taskForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
