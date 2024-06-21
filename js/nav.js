@@ -67,6 +67,7 @@ function generateLoggedInNavbar(username) {
                           Services
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="service.html">Dashboard</a></li>
                           <li><a class="dropdown-item" href="leaveApplication.html">Leave Application</a></li>
                           <li><a class="dropdown-item" href="employees-information.html">View Employees Information</a></li>
                           <li><a class="dropdown-item" href="taskManagement.html">Task Management</a></li>
