@@ -6,66 +6,62 @@
 
 - Figma : https://www.figma.com/design/MLItv9Z6PN00T7EcJAp9bE/Project3?node-id=87-3
 
-## Project Context
-Develop a comprehensive HR management system where employees can register, log in, view profiles, and access HR services using HTML, CSS, Bootstrap, and JavaScript. The project includes local storage for session and data management.
+ # HR System Project
 
-## Project Requirements
+This project is a comprehensive HR management system developed using HTML, CSS, Bootstrap, and JavaScript. It allows employees to register, log in, view profiles, and access various HR services. The system utilizes local storage for session management and data persistence.
 
-### Login and Register Pages
-- **Login Page**: Users log in with email and password, validated with JavaScript, and stored in local storage.
-- **Register Page**: New users register with a username, email, and password, validated and saved to local storage.
+## Features
 
-### Home Page
-- **Navigation Bar**: Responsive, includes links to all pages. Shows Login/Register for guests, and Logout/Username for logged-in users.
-- **Content**: Introduction to the site and its services, with an illustrative image.
-- **Footer**: Company’s contact details, responsive and built using Bootstrap.
+- **Login and Register Pages:**
+  - Users can log in with their email and password.
+  - New users can register with a username, email, and password.
 
-### Profile Page
-- Display user information (username, email, position, image) from a JSON file.
-- Edit and save profile information using JavaScript and local storage.
+- **Home Page:**
+  - Responsive navigation bar with links to all pages.
+  - Introduction to site services with an illustrative image.
+  - Footer displaying company contact details.
 
-### Service Pages
-- **Leave Application**: Form to apply for leave, stored in local storage.
-- **View Employees**: Display and search employee information from JSON objects.
-- **Company Policies**: List of policies loaded from a JSON file.
-- **Task Management**: Create, view, and update tasks, stored in local storage.
-- **Feedback System**: Submit feedback, stored in local storage.
+- **Profile Page:**
+  - Display and edit user information (username, email, position, image) sourced from a JSON file.
 
-### Footer
-- Included on all pages, with contact details and a map, responsive and built using Bootstrap.
+- **Service Pages:**
+  - Leave Application: Form for leave requests stored in local storage.
+  - View Employees: Display and search employee data from JSON objects.
+  - Company Policies: List of policies loaded from a JSON file.
+  - Task Management: Create, view, and update tasks stored locally.
+  - Feedback System: Submit feedback stored in local storage.
 
-### About Page
-- Paragraph and image about the site, team section with member cards.
+- **About Page:**
+  - Overview of the site and team members.
 
-### Contact Us Page
-- Contact information and a form for feedback, stored in local storage and viewed by HR.
-
-## Functional Requirements
-- **Local Storage**: Manage user sessions, profile data, applications, policies, tasks, and feedback.
-- **Form Validation**: JavaScript validation for all forms.
-- **JSON Files**: Store employee data and company policies.
+- **Contact Us Page:**
+  - Contact information and feedback form stored locally and accessible by HR.
 
 ## Technical Requirements
-- **HTML & CSS**: Semantic HTML5 and modern CSS3.
-- **Bootstrap**: Enhance design and responsiveness.
-- **JavaScript**: Interactivity, form validation, and data management.
 
-## Design Requirements
-- **Creative Appearance**: Professional and appealing design.
-- **Responsiveness**: Fully responsive on all devices.
+- **HTML & CSS:** Semantic HTML5 and modern CSS3 techniques.
+- **Bootstrap:** Enhances design and ensures responsiveness across devices.
+- **JavaScript:** Provides interactivity, form validation, and local storage management.
+
+## Design Considerations
+
+- **Responsive Design:** Fully responsive on all devices for optimal user experience.
+- **User-Friendly Interface:** Intuitive navigation and form validations for seamless interaction.
 
 ## Learning Methods
-- **Learning by Doing**: Build the website independently.
-- **Project-Based Learning**: Group collaboration.
-- **Agile Methodology**: Work with Scrum master and product owner.
-- **Time Management**: Complete by Saturday, 22nd June 2024, 11:59 PM.
 
-## Assessment Methods
-- **Presentation**: 15-minute class presentation and individual technical evaluation.
+- **Project-Based Learning:** Independently developed to enhance skills in web development.
+- **Agile Methodology:** Used for project management and iterative development.
 
-## Deliverables
-1. Responsive website on all devices.
-2. GitHub repository link.
-3. Mockup, wireframe, and prototype for all pages.
-4. Figma link in the Readme file on GitHub.
-5. Trello Board link.
+## Future Improvements
+
+- Implementation of additional features such as user roles, advanced search functionalities, and enhanced data visualization.
+- Integration with backend services for real-time data synchronization and improved scalability.
+
+## Authors
+
+- [Your Name] - [Your GitHub Profile](https://github.com/yourusername)
+
+## Acknowledgments
+
+- Mention any resources or individuals who helped or inspired you during the project.
