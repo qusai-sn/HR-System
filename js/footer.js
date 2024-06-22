@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Company name
+                        <i class="fas fa-gem me-3"></i>EduFlex HR
+
                     </h6>
                     <p>
                        We are dedicated to providing the best HR solutions for schools around the country.
