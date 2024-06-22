@@ -1,5 +1,9 @@
 # HR Management System
 
+## Links : 
+trello : https://trello.com/b/i9RARH2g/hr-system-trello
+Figma : https://www.figma.com/design/MLItv9Z6PN00T7EcJAp9bE/Project3?node-id=87-3
+
 ## Project Context
 Develop a comprehensive HR management system where employees can register, log in, view profiles, and access HR services using HTML, CSS, Bootstrap, and JavaScript. The project includes local storage for session and data management.
 
