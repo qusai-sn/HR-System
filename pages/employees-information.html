@@ -19,16 +19,8 @@
 
     <style>
       
-        #generate-report {
-      font-size: 1.2rem;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background-color 0.3s, box-shadow 0.3s;
-    }
-    #generate-report:hover {
-      background-color: #28a745;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+        
+     
        #employee-cards{
         text-align: center;
         margin: 20px;
@@ -72,6 +64,16 @@
           margin: auto;
           margin-bottom: 50px;
         }
+        .search-bar { 
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+        }
+        .btn-n { 
+          font-size: 20px;
+          height: 50px;
+        }
     </style>
 </head>
 <body>
@@ -86,9 +88,12 @@
     <!-- display employees cards here -->
     <section id="employees-section">
       <h2 style="text-align: center; font-size: 36px;">Employee List</h2>
-      <div class="container-xl mb-4">
+      <div class="container-xl mb-4 search-bar">
         <input type="text" id="search-input" class="form-control" placeholder="Search by Name or Job Title">
+        <button id="generate-report" class="btn btn-primary btn-n" onclick="generatePDF()" >report</button>
+        <button class="btn btn-primary btn-n" id="set-local">default </button>
       </div>
+      
       <div class="container-xl">
         <table class="table table-striped">
           <thead>
@@ -106,10 +111,8 @@
       </div>
     </section>
     
+   
     
-    <div class="d-flex justify-content-center align-items-center" style="height: 80px;">
-        <button id="generate-report" class="btn btn-success" onclick="generatePDF()" >Generate report</button>
-    </div>
 </body>
      <!-- Footer -->
     <script src="../js/footer.js"></script>
@@ -120,6 +123,7 @@
   <script src="../js/darkmode.js"></script>
   <script src="../js/get-employees-info.js"></script>
   <script src="../js/report.js"></script>
+  <script src="../js/set-local.js"></script>
   
 </body>
 </html>

@@ -199,3 +199,74 @@ h1, h2, h3, h4, h5, h6, p, a {
 } 
  
 
+
+
+/* Define keyframes for the fade-in and slide-in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations to the elements */
+.hero-section .content {
+  opacity: 0;
+  animation: slideInLeft 1s forwards;
+}
+
+.hero-section img {
+  opacity: 0;
+  animation: slideInRight 1s forwards;
+}
+
+/* Initial state for the elements */
+.hero-section .content, .hero-section img {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes floatAnimation {
+  0% {
+      transform: translateY(0); /* Start position */
+  }
+  50% {
+      transform: translateY(-10px); /* Float up */
+  }
+  100% {
+      transform: translateY(0); /* Back to start position */
+  }
+}
+
+/* Apply the animation to the image */
+.floating-animation {
+  animation: floatAnimation 3s ease-in-out infinite; /* Adjust duration and easing as needed */
+}
