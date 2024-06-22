@@ -60,6 +60,12 @@ This project is a comprehensive HR management system developed using HTML, CSS, 
 
 ## Authors
 
-- [qusai alsenjalawi] - 
+- Scrum Master : qusai alsenjalawi
+- Product Owner : leen abu daboos
+- Developer : mohammad al-gharibeh
+- Developer : najlaa alsmadi
+- Developer : suha tayseer
+- Developer : noor alshloul
+
 
  
