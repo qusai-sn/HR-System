@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
   function generateFooter() {
     const footerHTML = `
 <!-- Footer -->
-<footer class="text-center text-lg-start" style="background-color: rgb(243, 243, 243);">
+<footer class="text-center text-lg-start" style="  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);">
 
-    <section class="text-center text-lg-start" style="padding: 10px; background-color: rgb(243, 243, 243);">
+    <section class="text-center text-lg-start" style="padding: 10px;  ">
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        We are dedicated to providing the best HR solutions for schools around the country.
                     </p>
                 </div>
-
+                 
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
                         Pages
@@ -39,13 +39,12 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </section>
 
-    <div class="text-center p-4" style="background-color: rgb(243, 243, 243);">
+    <div class="text-center p-4" >
         © 2024 Copyright:
         <a href="#" class="text-reset fw-bold">HR.com</a>
     </div>
 </footer>
 <!-- Footer -->
-
 
     `;
   
