@@ -60,8 +60,6 @@ This project is a comprehensive HR management system developed using HTML, CSS, 
 
 ## Authors
 
-- [Your Name] - [Your GitHub Profile](https://github.com/yourusername)
+- [qusai alsenjalawi] - 
 
-## Acknowledgments
-
-- Mention any resources or individuals who helped or inspired you during the project.
+ 
