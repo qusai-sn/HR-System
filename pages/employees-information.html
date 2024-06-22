@@ -15,7 +15,10 @@
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/main/nav.css">
   <script src="../js/session-check.js"></script>
+  <link rel="stylesheet" href="../css/main/dark-mode.css">
+
     <style>
+      
         #generate-report {
       font-size: 1.2rem;
       padding: 10px 20px;
@@ -59,6 +62,16 @@
         .header{
             text-align: center;
         }
+        #employees-section-card {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: 20px 50px;
+          max-width: 1200px;
+          text-align: center;
+          margin: auto;
+          margin-bottom: 50px;
+        }
     </style>
 </head>
 <body>
@@ -66,10 +79,34 @@
   <script src="../js/nav.js"></script>
     <!-- Navbar End -->
 
-    <h2 id="header" style="text-align: center; margin: 2%;">View employees information</h2>
-
+    <h2 id="header" style="text-align: center; margin: 2%;">Best Employees Of The Month</h2>
+    <section id="employees-section-card">
+      
+    </section>
     <!-- display employees cards here -->
-    <div id="employee-cards" ></div>
+    <section id="employees-section">
+      <h2 style="text-align: center; font-size: 36px;">Employee List</h2>
+      <div class="container-xl mb-4">
+        <input type="text" id="search-input" class="form-control" placeholder="Search by Name or Job Title">
+      </div>
+      <div class="container-xl">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Name</th>
+              <th scope="col">Job Title</th>
+              <th scope="col">Salary</th>
+            </tr>
+          </thead>
+          <tbody id="employee-table-body">
+            <!-- Employee rows will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    
     <div class="d-flex justify-content-center align-items-center" style="height: 80px;">
         <button id="generate-report" class="btn btn-success" onclick="generatePDF()" >Generate report</button>
     </div>
@@ -83,5 +120,6 @@
   <script src="../js/darkmode.js"></script>
   <script src="../js/get-employees-info.js"></script>
   <script src="../js/report.js"></script>
+  
 </body>
 </html>
