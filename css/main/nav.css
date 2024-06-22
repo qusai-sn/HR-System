@@ -34,7 +34,7 @@ body {
     color: #fff;
 }
 .dark-mode .navbar-brand .Text-r {
-    color: #05dd71; /* Or any other color you prefer */
+    color: #2905dd; 
 }
 .dark-mode .carousel-control-prev-icon, .dark-mode .carousel-control-next-icon {
     color: #fff;
@@ -94,3 +94,67 @@ body {
 .btn-logout:hover {
     color: darkgray;
 }
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+.dark-mode .navbar li a {
+    color: #fff;
+}
+.dark-mode .navbar-brand .Text-r {
+    color: #1e05dd; 
+}
+.dark-mode .carousel-control-prev-icon, .dark-mode .carousel-control-next-icon {
+    color: #fff;
+    background-color: #222;
+}
+.dark-mode .card {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode footer {
+    background-color: #222;
+    color: #fff;
+}      .dropdownul {
+    background-color: #0d6efd; 
+}
+
+.dark-mode .dropdownul {
+    background-color: #0d6efd;
+    color: white;    }
+.dark-mode .dropdownul :hover{
+    background-color: #0d6efd;
+    color: black;   
+}
+.dropdownul {
+    background-color: #0d6efd;
+    color: black;
+}
+
+.navbar-nav .nav-item {
+    position: relative; 
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #0d6efd; 
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000; 
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #0d6efd; 
+    color: #fff; 
+}
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff; 
+}
+
+.dropdown-menu .dropdown-item.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+ 

@@ -30,6 +30,88 @@
     background-color: #f1f1f1;
     padding: 20px 0;
 }
+/* dark-mode.css */
+/* Styles for dark mode (if any) */
+
+/* nav.css */
+/* Styles for navigation (if any) */
+
+/* animations.css */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.info-box {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.info-box:nth-child(odd) {
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.info-box:nth-child(even) {
+    animation: fadeInRight 1s ease-in-out forwards;
+}
+
+.info-section .info-box:nth-child(odd) img {
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.info-section .info-box:nth-child(even) img {
+    animation: fadeInRight 1s ease-in-out forwards;
+}
+
+/* Ensuring the animations play with a slight delay */
+.info-box:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.info-box:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.info-box:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.info-box:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
 
     </style>
 </head>
@@ -42,7 +124,7 @@
 <section class="hero-section">
     <div class="container">
         <h1 class="display-3 fw-bold">About Us</h1>
-        <p class="lead">We are dedicated to providing the best HR solutions for your company.</p>
+        <p class="lead">We are dedicated to providing the best HR solutions for schools around the country.</p>
     </div>
 </section>
 
@@ -55,7 +137,7 @@
             <div class="col-lg-6 mb-4">
                 <div class="info-box">
                     <h2>Our Mission</h2>
-                    <p>Our mission is to empower organizations with cutting-edge HR solutions that streamline processes, enhance productivity, and foster a positive workplace culture. We are committed to providing intuitive and comprehensive tools that simplify human resource management, enabling companies to focus on their core business objectives while ensuring employee satisfaction and compliance with industry standards. Through innovation and dedication, we aim to transform the HR landscape, making it more efficient, transparent, and effective for businesses of all sizes.
+                    <p style="font-size: larger;">Our mission is to revolutionize HR processes in Jordanian schools by leveraging web technology. We aim to address the existing performance challenges through innovative HR solutions that streamline operations, boost productivity, and cultivate a supportive workplace environment. Our commitment lies in delivering intuitive tools that simplify human resource management, allowing organizations to prioritize core business goals while ensuring employee satisfaction and compliance with industry standards. With a focus on efficiency, transparency, and effectiveness, we aspire to reshape the HR landscape and empower schools with robust, future-ready solutions.
                     </p>
                 </div>
             </div>
@@ -72,8 +154,8 @@
             <div class="col-lg-6 mb-4">
                 <div class="info-box">
                     <h2>Our Vision</h2>
-                    <p>Our vision is to be the leading provider of innovative HR solutions that transform the way organizations manage their workforce. We aspire to create a future where HR processes are seamlessly integrated, allowing companies to make data-driven decisions that enhance employee engagement, productivity, and overall satisfaction. By leveraging the latest technology and fostering a culture of continuous improvement, we aim to build a dynamic and adaptable HR ecosystem that meets the evolving needs of businesses and their employees.
-                    </p>
+                    <p style="font-size: larger;">Our vision is to emerge as the premier provider of innovative HR solutions, reshaping how organizations oversee their workforce. We envision a future where HR processes are seamlessly integrated, enabling companies to make informed, data-driven decisions that elevate employee engagement, productivity, and overall satisfaction. Through harnessing cutting-edge technology and nurturing a culture of continuous advancement, we strive to cultivate a dynamic and adaptable HR ecosystem that meets the evolving demands of businesses and their employees.</p>
+
                 </div>
             </div>
         </div>

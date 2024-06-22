@@ -24,7 +24,7 @@ function generateLoggedOutNavbar() {
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mx-auto">
-                  <li class="nav-item"><a class="nav-link active Active-item" href="home.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
                   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                   <li class="nav-item"><a class="nav-link" href="policies.html">Policies</a></li>
@@ -58,7 +58,7 @@ function generateLoggedInNavbar(username) {
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mx-auto">
-                  <li class="nav-item"><a class="nav-link active Active-item" href="home.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link  " href="home.html">Home</a></li>
                   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                   <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>

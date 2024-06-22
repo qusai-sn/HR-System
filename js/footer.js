@@ -15,16 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
                             <i class="fas fa-gem me-3"></i>Company name
                         </h6>
                         <p>
-                            We are a company that performs all technical work for organizations interested in the IT sector.
+                           We are dedicated to providing the best HR solutions for schools around the country.
                         </p>
                     </div>
                      
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Home
+                            Pages
                         </h6>
-                        <p><a href="#!" class="text-reset">About</a></p>
-                        <p><a href="#!" class="text-reset">Profile</a></p>
+                        <p><a href="home.html" class="text-reset">Home</a></p>
+                        <p><a href="about.html" class="text-reset">About</a></p>
+                        <p><a href="contact.html" class="text-reset">Contact</a></p>
+                        <p><a href="policies.html" class="text-reset">Policies</a></p>
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
